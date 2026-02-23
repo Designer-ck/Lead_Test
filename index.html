@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Dashboard Structured</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font add -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Billing Dashboard (HTML + CSS Only)</title>
+    </head>
+
+    <body>
+        <!-- ==============================
+           SIDEBAR
+      ============================== -->
+        <aside class="sidebar">
+            <div class="logo">Logos</div>
+            <ul class="menu">
+                <li>Communicate</li>
+                <li>Schedule</li>
+                <li>Grades</li>
+                <li>Attendance</li>
+                <li>Counseling</li>
+                <li>Alerts</li>
+                <li>Transcript</li>
+                <li>Re-Enroll</li>
+                <li class="active">Billing</li>
+                <li>Service Hours</li>
+            </ul>
+        </aside>
+        <!-- Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <!-- ==============================
+           MAIN CONTENT
+      ============================== -->
+        <main class="main">
+            <!-- ==============================
+   MOBILE HEADER
+============================== -->
+            <div class="mobile-header">
+                <!-- Main header -->
+                <div class="mobile-nav">
+
+                    <div class="nav-left">
+                        <div class="hamburger" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="nav-title">Logos</div>
+
+                    <div class="nav-right">
+                        <img src="assets/images/profile.svg" alt="profile">
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- TABS -->
+            <header class="header">
+                <div class="tabs" id="tabs">
+                    <div class="tab active" data-tab="balance">Balance</div>
+                    <div class="tab" data-tab="statements">Statements</div>
+                    <div class="tab" data-tab="autopay">AutoPay</div>
+                </div>
+                <div class="site-info">
+                    <div>
+                        <img src="assets/images/print.svg" alt="print" width="20" height="18">
+                        <div>Print</div>
+                    </div>
+                    <div>
+                        <img src="assets/images/profile.svg" alt="print" width="20" height="20">
+                        <div>Bartholemew</div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="tab-content">
+                <div class="tab-panel active" id="balance">
+                    <!-- TITLE -->
+                    <h1 class="h1-title">Balance</h1>
+                    <!-- CONTENT -->
+                    <div class="content">
+                        <!-- BALANCE LIST -->
+                        <section class="balance-list">
+                            <h3 class="h3-title">Total Outstanding Balances</h3>
+                            <div class="balance-item">
+                                <span>Enrollment / Registration Fees</span>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="balance-item">
+                                <span>Field Trips 6th Grade</span>
+                                <span>$0.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Friday School</span>
+                                <span class="dark-gray">$1,602.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Sports Fee Football</span>
+                                <span>$0.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Tuition</span>
+                                <span class="dark-gray">$5,768.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Sports Fees</span>
+                                <span>$0.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Friday School Payment</span>
+                                <span class="negative">-$930.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Multi‑Child Discount</span>
+                                <span class="negative">-$489.50</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Registration Fees</span>
+                                <span>$0.00</span>
+                            </div>
+
+                            <div class="balance-item">
+                                <span>Tuition Payment</span>
+                                <span class=" negative">-$4,405.50</span>
+                            </div>
+
+                            <!-- SUMMARY -->
+                            <div class="summry-list">
+                                <h3 class="h3-title">Summary</h3>
+                                <div class="balance-item">
+                                    <span> Statement Balance:</span>
+                                    <span class="dark-gray">$1,545.00</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- BALANCE CARD -->
+
+                        <section class="balance-card-wp">
+                            <div class="balance-card">
+                                <div class="balance-card-info-wp">
+                                    <div class="balance-card-info">
+                                        <span>Total Balance</span>
+                                        <span class="amount">$1,545.00</span>
+                                    </div>
+
+                                    <div class="balance-card-info">
+                                        <span>Remaining Balance</span>
+                                        <span class="amount">$1,545.00</span>
+                                        <div class="payment">
+                                            Payment Due: 06/05/2024
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-btn-wp">
+                                    <div class="note">
+                                        If you are making a one time payment for something, please add a note.
+                                    </div>
+                                    <button class="pay-btn">
+                                        Go to Payment
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="statements">
+                    <!-- TITLE -->
+                    <h1 class="h1-title">Statements</h1>
+                </div>
+
+                <div class="tab-panel" id="autopay">
+                    <!-- TITLE -->
+                    <h1 class="h1-title">AutoPay</h1>
+                </div>
+
+            </div>
+        </main>
+    </body>
+    <script src="assets/js/custom.js"></script>
+
+    </html>
